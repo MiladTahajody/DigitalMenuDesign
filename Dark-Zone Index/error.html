@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" translate="no">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+
+    <title>خطای سرور | Dark-Zone Café</title>
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <style>
+        @font-face {
+            font-family: "fr";
+            src: url("/fr.woff2") format("woff2");
+			font-display: block;
+        }
+
+
+        :root {
+            --loader-color: #000000;
+        }
+
+
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        #error-screen {
+            display: flex;
+            position: fixed;
+            inset: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            text-align: center;
+            background: #fff;
+            padding: 32px;
+            box-sizing: border-box;
+        }
+
+
+        .error-logo {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+
+        }
+
+
+        .error-title {
+            font-family: "fr", sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--loader-color);
+            margin: 0;
+        }
+
+
+        .error-subtitle {
+            font-family: "fr", sans-serif;
+            font-size: 18px;
+			font-weight: 600;
+            color: var(--loader-color);
+            margin: 0;
+            line-height: 2;
+        }
+
+
+        .error-btn {
+            font-family: "fr", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            background: var(--loader-color);
+            border: none;
+            border-radius: 18px 4px;
+            padding: 12px 36px;
+            margin-top: 8px;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+
+        .error-btn:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 480px) {
+
+            .error-logo {
+                width: 110px;
+                height: 110px;
+            }
+
+            .error-title {
+                font-size: 19px;
+            }
+
+            .error-subtitle {
+                font-size: 13px;
+            }
+
+            .error-btn {
+                font-size: 14px;
+                padding: 11px 30px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="error-screen">
+        <img src="/logo.svg" class="error-logo" alt="Dark-Zone Café">
+        <p class="error-title">خطای سرور</p>
+        <p class="error-subtitle">مشکلی در اتصال به سرور پیش آمده<br>لطفا کمی صبر و دوباره تلاش کنید</p>
+        <a class="error-btn" href="/index.html">بازگشت به صفحه اصلی</a>
+    </div>
+
+</body>
+
+</html>
